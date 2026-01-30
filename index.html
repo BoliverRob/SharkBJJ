@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>MatShark - BJJ Progression</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                '-apple-system', 
+                'BlinkMacSystemFont', 
+                '"SF Pro Text"', 
+                '"Segoe UI"', 
+                'Roboto', 
+                'Helvetica', 
+                'Arial', 
+                'sans-serif'
+              ],
+            },
+            colors: {
+              ios: {
+                bg: '#000000',
+                surface: '#1C1C1E', // System Gray 6 Dark
+                surface2: '#2C2C2E', // System Gray 5 Dark
+                separator: '#38383A',
+                blue: '#0A84FF',
+                green: '#30D158',
+                red: '#FF453A',
+                orange: '#FF9F0A',
+                yellow: '#FFD60A',
+                purple: '#BF5AF2',
+                teal: '#64D2FF',
+                gray: '#8E8E93',
+                label: '#FFFFFF',
+                label2: '#EBEBF599', // 60% white
+                label3: '#EBEBF54D', // 30% white
+                label4: '#EBEBF52E', // 18% white
+              }
+            },
+            boxShadow: {
+              'ios-card': '0 2px 8px rgba(0, 0, 0, 0.12)',
+              'ios-modal': '0 -8px 32px rgba(0, 0, 0, 0.4)',
+              'ios-glow': '0 0 20px rgba(10, 132, 255, 0.3)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #FFFFFF;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* Disable text selection for app-like feel */
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Hide scrollbar for clean UI but keep functionality */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* iOS Toggle Switch */
+      .ios-toggle {
+        appearance: none;
+        width: 51px;
+        height: 31px;
+        background: #39393D;
+        border-radius: 999px;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        transition: background 0.3s;
+      }
+      .ios-toggle::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 27px;
+        height: 27px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.2);
+      }
+      .ios-toggle:checked {
+        background: #30D158;
+      }
+      .ios-toggle:checked::after {
+        transform: translateX(20px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.22.3",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.8",
+    "react/": "https://aistudiocdn.com/react@^18.2.0/",
+    "react": "https://aistudiocdn.com/react@^18.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.344.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^18.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^2.12.2",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^0.1.0",
+    "react-qr-code": "https://aistudiocdn.com/react-qr-code@^2.0.12"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

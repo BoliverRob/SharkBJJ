@@ -1,0 +1,7 @@
+{
+  "name": "MatShark BJJ",
+  "description": "A premier, gamified Brazilian Jiu-Jitsu progression and attendance tracker.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
