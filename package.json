@@ -1,7 +1,7 @@
 {
   "name": "matshark-bjj",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,13 +15,18 @@
     "lucide-react": "^0.344.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.12.2",
-    "@google/genai": "^0.1.0",
-    "react-qr-code": "^2.0.12"
+    "@google/generative-ai": "^0.21.0",
+    "react-qr-code": "^2.0.12",
+    "jsbarcode": "^3.11.6",
+    "react-barcode": "^1.5.3",
+    "html5-qrcode": "^2.3.8",
+    "dexie": "^4.0.9"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vite-plugin-pwa": "^0.21.1"
   }
 }

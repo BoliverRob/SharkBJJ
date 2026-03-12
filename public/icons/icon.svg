@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="128" fill="black"/>
+  <text x="256" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="200" text-anchor="middle">🦈</text>
+  <text x="256" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle">BJJ</text>
+</svg>
